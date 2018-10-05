@@ -6,7 +6,6 @@ using System.Threading.Tasks;
 
 namespace NoteApp
 {
-    public class Class1
-    {
+    { 
     }
 }
