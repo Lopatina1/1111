@@ -1,4 +1,4 @@
-﻿namespace NoteAppUI
+﻿namespace NoteApp
 {
     partial class Form1
     {
@@ -28,34 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.buttonOk = new System.Windows.Forms.Button();
-            this.SuspendLayout();
-            // 
-            // buttonOk
-            // 
-            this.buttonOk.Location = new System.Drawing.Point(630, 300);
-            this.buttonOk.Name = "buttonOk";
-            this.buttonOk.Size = new System.Drawing.Size(100, 23);
-            this.buttonOk.TabIndex = 0;
-            this.buttonOk.Text = "OK";
-            this.buttonOk.UseVisualStyleBackColor = true;
-            this.buttonOk.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // Form1
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.buttonOk);
-            this.Name = "Form1";
             this.Text = "Form1";
-            this.ResumeLayout(false);
-
         }
 
         #endregion
-
-        private System.Windows.Forms.Button buttonOk;
     }
 }
 

@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // Общие сведения об этой сборке предоставляются следующим набором
 // набора атрибутов. Измените значения этих атрибутов, чтобы изменить сведения,
 // связанные со сборкой.
-[assembly: AssemblyTitle("NoteAppUI")]
+[assembly: AssemblyTitle("NoteApp.Model")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("NoteAppUI")]
+[assembly: AssemblyProduct("NoteApp.Model")]
 [assembly: AssemblyCopyright("Copyright ©  2018")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // Следующий GUID служит для идентификации библиотеки типов, если этот проект будет видимым для COM
-[assembly: Guid("2492b28a-b97b-4a32-b998-d02a5e42bdb9")]
+[assembly: Guid("853988aa-3993-45cd-830b-bc401ae3cadb")]
 
 // Сведения о версии сборки состоят из следующих четырех значений:
 //

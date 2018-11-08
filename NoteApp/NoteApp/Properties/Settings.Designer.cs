@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace NoteAppUI.Properties
+namespace NoteApp.Properties
 {
 
 
