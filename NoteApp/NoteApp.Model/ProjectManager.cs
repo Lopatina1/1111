@@ -10,6 +10,9 @@ namespace NoteApp.Model
 {
     public class ProjectManager
     {
+        // Путь в папку "Документы".
+        public static string PathToDocuments = Environment.GetFolderPath(Environment.SpecialFolder.Personal) + @"\NoteApp.notes";
+
         public static void SaveToFile(Project listNotes, string fileTitle)
         {
             JsonSerializer serializer = new JsonSerializer();

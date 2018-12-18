@@ -5,22 +5,21 @@ using System.Dynamic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Newtonsoft.Json;
 
 namespace NoteApp.Model
 {
     /// <summary>
-    /// 
+    /// Класс, описывающий заметку.
     /// </summary>
     public class Note : ICloneable
     {
-        /// <summary>
-        /// 
-        /// </summary>
 
+        [JsonProperty]
         public readonly DateTime CreatedTime;
         private DateTime _lastChangeTime;
-        private string _title;
-        private string _text = "Без названия";
+        private string _title = "Без названия";
+        private string _text;
         private DateTime _createdTime;
         private NoteCategory _noteCategory;
 
@@ -86,8 +85,12 @@ namespace NoteApp.Model
                 {
                     throw new ArgumentException("Длина заголовка должна быть меньше 50 символов");
                 }
-
-                _title = value;
+                else if (value == string.Empty)
+                {
+                    throw new ArgumentException("Текст заголовка пуст!");
+                }
+                else
+                    _title = value;
             }
         }
 
@@ -148,6 +151,11 @@ namespace NoteApp.Model
             newNote.Category = _noteCategory;
             newNote.LastChangeTime = _lastChangeTime;
             return newNote;
+        }
+
+        public string ToString()
+        {
+            return $"{Title} {Text} {Category} {CreatedTime} {LastChangeTime} {Category}";
         }
     }
 }
