@@ -57,11 +57,6 @@ namespace NoteApp
             Close();
         }
 
-        private void Timer_Tick(object sender, EventArgs e)
-        {
-            
-
-        }
 
         private void TextBoxTitle_TextChanged(object sender, EventArgs e)
         {

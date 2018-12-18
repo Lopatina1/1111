@@ -55,9 +55,6 @@ namespace NoteApp
             RemoveNote();
         }
 
-        private void LabelModified_Click(object sender, EventArgs e)
-        {
-        }
 
         private void editNoteToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -119,9 +116,6 @@ namespace NoteApp
             AddNote();
         }
 
-        private void ListNotes_Click(object sender, EventArgs e)
-        {
-        }
 
         private void ComboCategory_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -143,10 +137,6 @@ namespace NoteApp
             }
         }
 
-        private void ListNotes_KeyPress(object sender, KeyPressEventArgs e)
-        {
-
-        }
 
         private void ListNotes_KeyDown(object sender, KeyEventArgs e)
         {
@@ -156,9 +146,9 @@ namespace NoteApp
             }
         }
 
-        private void TextBoxNote_TextChanged(object sender, EventArgs e)
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            Close();
         }
     }
 }
